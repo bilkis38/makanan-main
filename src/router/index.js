@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import FoodsView from '../views/FoodsView.vue'
 import FoodDetailView from '../views/FoodDetailView.vue'
+import TrolliView from '../views/TrolliView.vue'
+
 
 
 Vue.use(VueRouter)
@@ -22,6 +24,11 @@ const routes = [
     path: '/foodsview/:id',
     name: 'FoodDetailView',
     component: FoodDetailView
+  },
+  {
+    path: '/trolliView',
+    name: 'TrolliView',
+    component: TrolliView
   },
   {
     path: '/about',

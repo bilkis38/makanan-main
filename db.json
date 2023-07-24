@@ -101,11 +101,8 @@
   ],
   "keranjangs": [
     {
-      "id": 1
-    },
-    {
       "jumlah_pemesanan": "1",
-      "Keterangan": "pedas",
+      "Keterangan": "pedes",
       "products": {
         "id": 2,
         "kode": "K-02",
@@ -113,6 +110,19 @@
         "harga": 14000,
         "is_ready": true,
         "gambar": "nasi-goreng-telor.jpg"
+      },
+      "id": 1
+    },
+    {
+      "jumlah_pemesanan": "1",
+      "Keterangan": "setengah",
+      "products": {
+        "id": 1,
+        "kode": "K-01",
+        "nama": "Sate Ayam",
+        "harga": 16000,
+        "is_ready": true,
+        "gambar": "sate-ayam.jpg"
       },
       "id": 2
     }
