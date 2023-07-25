@@ -100,5 +100,142 @@
     }
   ],
   "keranjangs": [],
-  "pesanans": []
+  "pesanans": [
+    {
+      "nama": "nisa",
+      "noMeja": "1",
+      "keranjangs": [
+        {
+          "jumlah_pemesanan": "3",
+          "Keterangan": "nasi setengah",
+          "products": {
+            "id": 2,
+            "kode": "K-02",
+            "nama": "Nasi Goreng Telur",
+            "harga": 14000,
+            "is_ready": true,
+            "gambar": "nasi-goreng-telor.jpg"
+          },
+          "id": 1
+        },
+        {
+          "jumlah_pemesanan": "2",
+          "Keterangan": "pedes",
+          "products": {
+            "id": 6,
+            "kode": "K-06",
+            "nama": "Bakso",
+            "harga": 10000,
+            "is_ready": true,
+            "gambar": "bakso.jpg"
+          },
+          "id": 2
+        }
+      ],
+      "id": 1
+    },
+    {
+      "nama": "bilkis nisa",
+      "noMeja": "1",
+      "keranjangs": [
+        {
+          "jumlah_pemesanan": "1",
+          "Keterangan": "pedas",
+          "products": {
+            "id": 2,
+            "kode": "K-02",
+            "nama": "Nasi Goreng Telur",
+            "harga": 14000,
+            "is_ready": true,
+            "gambar": "nasi-goreng-telor.jpg"
+          },
+          "id": 1
+        }
+      ],
+      "id": 2
+    },
+    {
+      "nama": "nisa",
+      "noMeja": "2",
+      "keranjangs": [
+        {
+          "jumlah_pemesanan": "1",
+          "Keterangan": "pedas",
+          "products": {
+            "id": 3,
+            "kode": "K-03",
+            "nama": "Nasi Rames",
+            "harga": 12000,
+            "is_ready": true,
+            "gambar": "nasi-rames.jpg"
+          },
+          "id": 1
+        }
+      ],
+      "id": 3
+    },
+    {
+      "nama": "bilkis nisa",
+      "noMeja": "1",
+      "keranjangs": [],
+      "id": 4
+    },
+    {
+      "nama": "dfgwg",
+      "noMeja": "1",
+      "keranjangs": [],
+      "id": 5
+    },
+    {
+      "nama": "dvfhb",
+      "noMeja": "1",
+      "keranjangs": [],
+      "id": 6
+    },
+    {
+      "nama": "sdf",
+      "noMeja": "1",
+      "keranjangs": [],
+      "id": 7
+    },
+    {
+      "nama": "sff",
+      "noMeja": "1",
+      "keranjangs": [
+        {
+          "jumlah_pemesanan": "1",
+          "products": {
+            "id": 3,
+            "kode": "K-03",
+            "nama": "Nasi Rames",
+            "harga": 12000,
+            "is_ready": true,
+            "gambar": "nasi-rames.jpg"
+          },
+          "id": 1
+        }
+      ],
+      "id": 8
+    },
+    {
+      "nama": "bilkis nisa",
+      "noMeja": "12",
+      "keranjangs": [
+        {
+          "jumlah_pemesanan": "1",
+          "Keterangan": "pedes",
+          "products": {
+            "id": 2,
+            "kode": "K-02",
+            "nama": "Nasi Goreng Telur",
+            "harga": 14000,
+            "is_ready": true,
+            "gambar": "nasi-goreng-telor.jpg"
+          },
+          "id": 1
+        }
+      ],
+      "id": 9
+    }
+  ]
 }

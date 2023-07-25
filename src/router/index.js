@@ -4,6 +4,7 @@ import HomeView from '../views/HomeView.vue'
 import FoodsView from '../views/FoodsView.vue'
 import FoodDetailView from '../views/FoodDetailView.vue'
 import TrolliView from '../views/TrolliView.vue'
+import PesananSukses from '../views/PesananSukses.vue'
 
 
 
@@ -30,6 +31,11 @@ const routes = [
     name: 'TrolliView',
     component: TrolliView
   },
+{
+  path: '/pesanansukses',
+  name: 'PesananSukses',
+  component: PesananSukses
+},
   {
     path: '/about',
     name: 'about',

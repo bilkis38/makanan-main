@@ -1,6 +1,6 @@
 <template>
   <div class="TrolliView">
-    <NavbarWa :updateKeranjang="keranjangs"/>
+    <NavbarWa :updateKeranjang="keranjangs" />
     <div class="container">
       <!-- breadcrumb -->
       <div class="row mt-4">
@@ -56,7 +56,9 @@
                   <td>
                     <strong>{{ keranjang.products.nama }}</strong>
                   </td>
-                  <td>{{ keranjang.Keterangan ? keranjang.Keterangan : "-" }}</td>
+                  <td>
+                    {{ keranjang.Keterangan ? keranjang.Keterangan : "-" }}
+                  </td>
                   <td>{{ keranjang.jumlah_pemesanan }}</td>
                   <td align="right">Rp. {{ keranjang.products.harga }}</td>
                   <td align="right">
@@ -68,7 +70,9 @@
                     >
                   </td>
                   <td align="center" class="text-danger">
-                    <b-icon-trash @click="hapusKeranjang(keranjang.id)"></b-icon-trash>
+                    <b-icon-trash
+                      @click="hapusKeranjang(keranjang.id)"
+                    ></b-icon-trash>
                   </td>
                 </tr>
                 <tr>
@@ -84,6 +88,24 @@
             </table>
           </div>
         </div>
+      </div>
+      <!-- Form Chekout -->
+      <div class="row justify-content-end">
+        <div class="col-md-4"></div>
+        <form class="mt-4" v-on:submit.prevent>
+          <div class="form-group">
+              <label for="nama">Nama :</label>
+              <input type="text" class="form-control" v-model="pesan.nama" />
+            </div>
+            <div class="form-group">
+              <label for="noMeja">Nomor Meja :</label>
+              <input type="text" class="form-control" v-model="pesan.noMeja" />
+            </div>
+
+          <button type="submit" class="btn btn-success float-right" @click="checkout">
+            <b-icon-cart></b-icon-cart>Pesan
+          </button>
+        </form>
       </div>
     </div>
   </div>
@@ -101,6 +123,7 @@ export default {
   data() {
     return {
       keranjangs: [],
+      pesan: {}
     };
   },
   methods: {
@@ -140,8 +163,8 @@ export default {
                 .catch((error) => console.log(error));
             });
 
-            this.$router.push({ path: "/pesanan-sukses" });
-            this.$toast.success("Sukses Dipesan", {
+            this.$router.push({ path: "/pesanansukses" });
+            this.$toast.success("Pesanan Sukses", {
               type: "success",
               position: "top-right",
               duration: 3000,
@@ -159,6 +182,7 @@ export default {
       }
     },
   },
+   
   mounted() {
     axios
       .get("http://localhost:3000/keranjangs")
